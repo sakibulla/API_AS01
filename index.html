@@ -50,7 +50,7 @@
               gap-4 md:gap-10 px-4 md:px-8 py-10">
 
       <!-- Left leaf -->
-      <img src="/assets/hero-leaf1.png" alt=""
+      <img src="assets/hero-leaf1.png" alt=""
         class="hidden md:block h-56 lg:h-72 object-contain block justify-self-start -ml-6" />
 
       <!-- Center card -->
@@ -68,8 +68,49 @@
       </div>
 
       <!-- Right leaf -->
-      <img src="/assets/hero-leaf2.png" alt=""
+      <img src="assets/hero-leaf2.png" alt=""
         class="hidden md:block h-56 lg:h-72 object-contain block justify-self-end -mr-6" />
+    </div>
+
+
+  </section>
+  <section class="bg-[#DCFCE7]">
+    <h3 class="text-center font-semibold text-2xl">Choose Your Trees</h3>
+
+    <div class="mx-20">
+      <div class="grid grid-cols-1 md:grid-cols-[260px_minmax(0,6fr)_minmax(0,1fr)] gap-6 items-start">
+
+        <!-- LEFT: Categories -->
+        <aside>
+          <h3 class="mx-2 text-slate-900 font-semibold">Categories</h3>
+          <div id="level-container"></div>
+        </aside>
+
+        <!-- MIDDLE: Section A -->
+        <!-- Loader (hidden by default) -->
+        <div id="loader" class="hidden w-full flex justify-center py-6">
+          <svg class="animate-spin h-8 w-8 text-green-700" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" fill="none">
+            </circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"></path>
+          </svg>
+        </div>
+        <section id="spinner" class="flex justify-center item-center py-10 hidden">
+          <span class="loading loading-bars loading-xl"></span>
+        </section>
+        <!-- MIDDLE: Section A -->
+        <section id="word-container" class="min-w-0 bg-white/70 rounded-xl p-4 min-h-[300px]
+            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+          <!-- content -->
+        </section>
+
+
+        <!-- RIGHT: Section B -->
+        <section id="section-b" class="min-w-50 bg-white/70 rounded-xl p-4 min-h-[300px]">
+          <h3 class="mx-2 text-slate-900 font-semibold">Your Cart</h3>
+        </section>
+
+      </div>
     </div>
 
 
