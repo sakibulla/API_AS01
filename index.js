@@ -1,11 +1,11 @@
 const loadLessons = () => {
   fetch("https://openapi.programming-hero.com/api/categories")
     .then((res) => res.json())
-    .then((json) => displayLesson(json.categories)); // assuming lessons are inside json.data
+    .then((json) => displayLesson(json.categories));
 };
 
 const loadAllWords = () => {
-  const url = `https://openapi.programming-hero.com/api/plants`; // replace 'all' with the actual endpoint if available
+  const url = `https://openapi.programming-hero.com/api/plants`;
   fetch(url)
     .then(res => res.json())
     .then(data => displayLevelWord(data.plants));
@@ -14,26 +14,26 @@ window.onload = () => {
   loadAllWords();
 };
 
-const  manageSpinner=(status)=>{
-  if(status==true){
+const manageSpinner = (status) => {
+  if (status == true) {
     document.getElementById("spinner").classList.remove("hidden");
     document.getElementById("word-container").classList.add("hidden");
-  }else{
+  } else {
     document.getElementById("word-container").classList.remove("hidden");
     document.getElementById("spinner").classList.add("hidden");
   }
 
 };
 
-const loadLevelWord=(id)=>{
-    manageSpinner(true);
-    const url=`https://openapi.programming-hero.com/api/category/${id}`
-    fetch(url)
-    .then(res=>res.json())
-    .then((data)=>displayLevelWord(data.plants));
-    };
+const loadLevelWord = (id) => {
+  manageSpinner(true);
+  const url = `https://openapi.programming-hero.com/api/category/${id}`
+  fetch(url)
+    .then(res => res.json())
+    .then((data) => displayLevelWord(data.plants));
+};
 
-let cart = []; // store added items
+let cart = [];
 
 const displayLevelWord = (words) => {
   const wordContainer = document.getElementById("word-container");
@@ -68,19 +68,19 @@ const displayLevelWord = (words) => {
   manageSpinner(false);
 };
 
-// ➕ Add to cart
+
 function addToCart(word) {
   cart.push(word);
   updateCart();
 }
 
-// ❌ Remove from cart
+
 function removeFromCart(index) {
   cart.splice(index, 1);
   updateCart();
 }
 
-// 🛒 Update cart section
+
 function updateCart() {
   const cartSection = document.getElementById("section-b");
   cartSection.innerHTML = `
@@ -110,22 +110,22 @@ function updateCart() {
     cartItems.appendChild(row);
   });
 
-  // total
+
   document.getElementById("cart-total").innerText = `Total: ৳${total}`;
 }
 
 
-const loadWordDetail=async(id)=>{
-    const url=`https://openapi.programming-hero.com/api/plant/${id}`
-    const res= await fetch(url);
-    const details=await res.json();
-    displayWordDetails(details.plants);
-    
+const loadWordDetail = async (id) => {
+  const url = `https://openapi.programming-hero.com/api/plant/${id}`
+  const res = await fetch(url);
+  const details = await res.json();
+  displayWordDetails(details.plants);
+
 };
-const displayWordDetails=(word)=>{
+const displayWordDetails = (word) => {
   console.log(word);
-  const detailsBox=document.getElementById("details-container");
-  detailsBox.innerHTML=`
+  const detailsBox = document.getElementById("details-container");
+  detailsBox.innerHTML = `
       <h2 class="text-2xl font-bold">${word.name}</h2>
 <img src="${word.image}" alt="${word.name}" 
      class="w-100 max-h-50 object-contain rounded-lg mx-auto"  />
@@ -148,7 +148,7 @@ const displayWordDetails=(word)=>{
 
 const displayLesson = (lessons) => {
   const levelContainer = document.getElementById("level-container");
-  levelContainer.innerHTML = ""; // clear previous content
+  levelContainer.innerHTML = "";
   for (let lesson of lessons) {
     const btnDiv = document.createElement("div");
     btnDiv.innerHTML = `
@@ -160,4 +160,4 @@ const displayLesson = (lessons) => {
   }
 };
 
-loadLessons("some-id"); // <-- make sure to pass a real id
+loadLessons("some-id");
