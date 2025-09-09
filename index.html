@@ -50,7 +50,7 @@
               gap-4 md:gap-10 px-4 md:px-8 py-10">
 
       <!-- Left leaf -->
-      <img src="assets/hero-leaf1.png" alt=""
+      <img src="/assets/hero-leaf1.png" alt=""
         class="hidden md:block h-56 lg:h-72 object-contain block justify-self-start -ml-6" />
 
       <!-- Center card -->
@@ -68,12 +68,13 @@
       </div>
 
       <!-- Right leaf -->
-      <img src="assets/hero-leaf2.png" alt=""
+      <img src="/assets/hero-leaf2.png" alt=""
         class="hidden md:block h-56 lg:h-72 object-contain block justify-self-end -mr-6" />
     </div>
 
 
   </section>
+
   <section class="bg-[#DCFCE7]">
     <h3 class="text-center font-semibold text-2xl">Choose Your Trees</h3>
 
@@ -115,3 +116,135 @@
 
 
   </section>
+
+
+  <section class="bg-[#DCFCE7]">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <!-- Title -->
+      <h2 class="text-center text-2xl md:text-3xl font-bold text-slate-900">
+        About the Campaign
+      </h2>
+
+      <!-- Two-column content -->
+      <div class="mt-8 grid gap-8 md:grid-cols-2 md:items-center">
+        <!-- Image card -->
+        <div class="rounded-2xl bg-white/70 p-2 shadow-sm">
+          <img src="/assets/about.png" alt="" class="w-full h-80 md:h-[420px] object-cover " />
+        </div>
+
+        <!-- Text -->
+        <div class="text-slate-700 leading-relaxed">
+          <p>
+            Green Earth is a global tree plantation initiative dedicated to fighting
+            climate change. Since our start, we’ve planted over 500,000 trees
+            worldwide. By joining our campaign, you help restore forests, create
+            habitats for wildlife, and combat global warming.
+          </p>
+          <ul class="mt-4 list-disc list-inside space-y-1">
+            <li>Restoration of natural habitats</li>
+            <li>Improvement of air quality</li>
+            <li>Support for local communities</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR IMPACT -->
+  <section class="bg-[#DCFCE7]">
+    <div class="mx-auto max-w-6xl px-4 py-12">
+      <h2 class="text-center text-2xl md:text-3xl font-bold text-slate-900">
+        Our Impact
+      </h2>
+
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <!-- Card -->
+        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 text-center">
+          <div class="text-3xl md:text-4xl font-extrabold text-emerald-600">500K+</div>
+          <div class="mt-1 text-slate-500">Trees Planted</div>
+        </div>
+
+        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 text-center">
+          <div class="text-3xl md:text-4xl font-extrabold text-emerald-600">120+</div>
+          <div class="mt-1 text-slate-500">Communities Involved</div>
+        </div>
+
+        <div class="rounded-2xl bg-white shadow-sm ring-1 ring-black/5 p-6 text-center">
+          <div class="text-3xl md:text-4xl font-extrabold text-emerald-600">30+</div>
+          <div class="mt-1 text-slate-500">Countries Reached</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- DONATION / SIGNUP -->
+  <section class="bg-emerald-800">
+    <div class="mx-auto max-w-6xl px-4 py-14">
+      <h2 class="text-center text-xl md:text-2xl font-semibold text-white">
+        Plant a Tree Today
+      </h2>
+
+      <div class="mt-6 mx-auto max-w-lg rounded-2xl bg-emerald-700/90 p-6 md:p-8 shadow-lg ring-1 ring-white/10">
+        <form class="space-y-4">
+          <!-- Name -->
+          <label class="block">
+            <span class="sr-only">Your Name</span>
+            <input type="text" placeholder="Your Name" class="w-full rounded-md border border-white/20 bg-white px-4 py-2.5
+                        text-slate-900 placeholder-slate-400
+                        focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+          </label>
+
+          <!-- Email -->
+          <label class="block">
+            <span class="sr-only">Your Email Address</span>
+            <input type="email" placeholder="Your Email Address" class="w-full rounded-md border border-white/20 bg-white px-4 py-2.5
+                        text-slate-900 placeholder-slate-400
+                        focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+          </label>
+
+          <!-- Number of Trees -->
+          <label class="block">
+            <span class="sr-only">Number of Trees</span>
+            <select class="w-full rounded-md border border-white/20 bg-white px-4 py-2.5
+                   text-slate-900 focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent">
+              <option selected>Number of Trees</option>
+              <option>1</option>
+              <option>5</option>
+              <option>10</option>
+              <option>25</option>
+              <option>50</option>
+              <option>100</option>
+            </select>
+          </label>
+
+          <!-- CTA -->
+          <button type="submit" class="w-full rounded-full px-4 py-2.5 font-semibold
+                       bg-yellow-500 hover:bg-yellow-600 text-emerald-900 shadow">
+            Donate Now
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-green-900 py-3">
+    <div class="text-center text-white text-sm">
+      © 2025 Green Earth. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+  <!-- Open the modal using ID.showModal() method -->
+  <!--<button class="btn" onclick="my_modal_5.showModal()">open modal</button>-->
+
+  <dialog id="word_modal" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box">
+      <div id="details-container">
+        <!-- Your dynamic content goes here -->
+      </div>
+    </div>
+  </dialog>
+
+  <script src="index.js"> </script>
+</body>
+
+</html>
