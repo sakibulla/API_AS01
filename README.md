@@ -19,16 +19,12 @@ Green Earth is a platform for plant lovers to browse, purchase, and interact wit
 ## Tech Stack
 
 - Frontend: React.js, HTML, CSS
-- Backend: Firebase, MongoDB
 
 ---
 
 ## Dependencies
 
 - React
-- Firebase
-- Axios (if used)
-- React Router
 - Any other dependencies from `package.json`
 
 ---
