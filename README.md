@@ -1,16 +1,50 @@
-1) What is the difference between var, let, and const?
-Ans: var is  function-scoped, can be redeclared. let is  block-scoped, can be reassigned.const is block-scoped, cannot be reassigned.
+# Green Earth 🌱
 
- 2) What is the difference between map(), forEach(), and filter()?
-Ans:map() returns a new array after transforming elements, forEach() just iterates without returning, and filter() returns a new array with elements that match a condition.
+Green Earth is a platform for plant lovers to browse, purchase, and interact with plant listings, with features like favorites and user management.
 
-3) What are arrow functions in ES6?
-Ans:Arrow functions in ES6 are a shorter syntax for writing functions that also inherit the surrounding this context.
+[Live Demo](https://green-earth001.netlify.app/)
 
+---
 
- 4) How does destructuring assignment work in ES6?
-Ans:  Destructuring assignment in ES6 lets unpack values from arrays or properties from objects into separate variables in a single, concise statement.
-  
-5) Explain template literals in ES6. How are they different from string concatenation?
-Ans: Template literals in ES6 use backticks (`) to create strings that support interpolation 
-(${expression}) and multiline text, unlike string concatenation which uses + and is less readable.
+## Features
+
+- Sellers can add their plants and view their listings.
+- Anyone can browse plant listings from other sellers.
+- Users can like plants and add them to their favorites.
+- Sellers can update plant information if needed.
+- Sellers can remove their plant listings from the platform.
+
+---
+
+## Tech Stack
+
+- Frontend: React.js, HTML, CSS
+- Backend: Firebase, MongoDB
+
+---
+
+## Dependencies
+
+- React
+- Firebase
+- Axios (if used)
+- React Router
+- Any other dependencies from `package.json`
+
+---
+
+## Screenshots
+
+![Green Earth Screenshot](link-to-your-screenshot.png)
+
+---
+
+## Installation & Running Locally
+
+ Clone the repository:
+
+cd <your-project-folder>
+npm install
+npm run dev
+Open http://localhost:3000
+ to view in your browser.
