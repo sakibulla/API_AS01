@@ -33,11 +33,7 @@ Green Earth is a platform for plant lovers to browse, purchase, and interact wit
 
 ---
 
-## Screenshots
 
-![Green Earth Screenshot](link-to-your-screenshot.png)
-
----
 
 ## Installation & Running Locally
 
